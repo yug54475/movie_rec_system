@@ -42,7 +42,7 @@ A **content-based movie recommender system** built using the TMDB 5000 Movies Da
 
 - Natural Language Processing (NLP)
 
-= Streamlit
+- Streamlit
 
 - Pickle (for model storage)
 
