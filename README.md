@@ -1,6 +1,6 @@
 # 🎬 Movie Recommender System (TMDB Dataset)
 
-A **content-based movie recommender system** built using the TMDB 5000 Movies Dataset. This project suggests similar movies based on the one you like — using NLP and cosine similarity techniques.
+A **content-based movie recommender system** built using the TMDB 5000 Movies Dataset. This project suggests similar movies based on the one you like, using NLP and cosine similarity techniques.
 
 ---
 
@@ -33,34 +33,16 @@ A **content-based movie recommender system** built using the TMDB 5000 Movies Da
 
 ---
 
-## 🚀 Run Locally
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yug54475/movie_rec_system.git
-   cd movie_rec_system
-Install dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the app
-
-bash
-Copy
-Edit
-streamlit run app.py
 ⚠️ model/similarity.pkl is excluded from the repo due to GitHub's 100 MB file limit. You’ll need to re-run the notebook to regenerate it.
 
 🛠 Tech Stack
-Python
+- Python
 
-Pandas, NumPy, Scikit-learn
+- Pandas, NumPy, Scikit-learn
 
-Natural Language Processing (NLP)
+- Natural Language Processing (NLP)
 
-Streamlit
+= Streamlit
 
-Pickle (for model storage)
+- Pickle (for model storage)
 
