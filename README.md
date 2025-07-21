@@ -1,33 +1,41 @@
-# movie-recommender-system-tmdb-dataset
-A content based movie recommender system using cosine similarity.
-A content-based movie recommender system built using the TMDB 5000 Movies Dataset. This project suggests similar movies based on the movie you like, using NLP and cosine similarity techniques.
+# 🎬 Movie Recommender System (TMDB Dataset)
 
-## Features
+A **content-based movie recommender system** built using the TMDB 5000 Movies Dataset. This project suggests similar movies based on the one you like — using NLP and cosine similarity techniques.
 
-- Recommend top 5 similar movies
-- TMDB poster and overview integration via API
-- Preprocessing of movie metadata including genres, cast, director, keywords
-- Pickle-based model for fast predictions
-- Streamlit web app interface for interactive usage
+---
 
-## Dataset
+## 📌 Features
+
+- 🔍 Recommend top 5 similar movies
+- 🖼️ TMDB poster and overview integration via API
+- 🧠 Preprocessing of movie metadata (genres, cast, director, keywords)
+- 💾 Fast predictions using pickled models
+- 🌐 Interactive Streamlit web app
+
+---
+
+## 📂 Dataset
 
 - `tmdb_5000_movies.csv`
 - `tmdb_5000_credits.csv`
 
-Source: [Kaggle - TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+**Source**: [TMDB 5000 Movie Dataset on Kaggle](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 
-## How It Works
+---
 
-- Extracts key features: genres, cast, crew, keywords
-- Combines into a single textual "tag" for each movie
-- Vectorizes tags using CountVectorizer
-- Calculates similarity scores using cosine similarity
+## ⚙️ How It Works
+
+- Extracts features like **genres**, **cast**, **crew**, and **keywords**
+- Combines them into a single "tag" string per movie
+- Vectorizes these tags using **CountVectorizer**
+- Computes similarity using **cosine similarity**
 - Returns top N most similar movies
 
-## How to Run
+---
 
-1. Clone the repository
+## 🚀 Run Locally
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/yug54475/movie_rec_system.git
    cd movie_rec_system
@@ -43,9 +51,9 @@ bash
 Copy
 Edit
 streamlit run app.py
-Note: The similarity matrix file (similarity.pkl) has been excluded due to GitHub's 100 MB file size limit. You’ll need to re-run the notebook or script to generate it.
+⚠️ model/similarity.pkl is excluded from the repo due to GitHub's 100 MB file limit. You’ll need to re-run the notebook to regenerate it.
 
-Tech Stack
+🛠 Tech Stack
 Python
 
 Pandas, NumPy, Scikit-learn
@@ -54,4 +62,5 @@ Natural Language Processing (NLP)
 
 Streamlit
 
-Pickle (for saving models)
+Pickle (for model storage)
+
